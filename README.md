@@ -8,6 +8,8 @@ for dynamic programming solvers like FRTDP.  The workflow for generating the MDP
 
 # Steps to generate adaptation policies for coastal applications
 ## Datasets needed for sea-level-rise simulations
+- The IPCC projection dataset (for Battery tide gauge in New York) used to simulate SLR models is publicly available at: [IPCC slr projections](https://zenodo.org/records/6382554)
+- The dataset for SLR trends (for Battery tide gauge in New York) used to fit the noise present in the past SLR observations is taken from: [NOAA slr trends](https://tidesandcurrents.noaa.gov/sltrends/sltrends_station.shtml?id=8518750)
 
 ## Generate transition models
 
