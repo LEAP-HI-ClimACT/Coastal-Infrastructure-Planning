@@ -30,4 +30,5 @@ Generate the rewards for states in the different systems for all the actions in 
 After generating the rewards for the different systems, the rewards for the full MDP state space are generated using rewards_model_MDP.m file. This file calls rewards_fp.m file to shape the rewards in such a way so as to use the fast parser of the input file in the solver used.
 
 ## Generate the MDP input file for dynamic programming solvers
-After generating the transitions and rewards components of the MDP model in the above steps, the MDP input file is generated using inp_mdp_file_generator.m file.
+After generating the transitions and rewards components of the MDP model in the above steps, the MDP input file is generated using inp_mdp_file_generator.m file. The generated input is solved using the FRTDP solver. The solver is publicly available at: [FRTDP](https://github.com/trey0/zmdp). The details related to the solver and the input file formats can be found in
+this GitHub.
