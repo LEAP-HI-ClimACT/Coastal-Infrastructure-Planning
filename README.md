@@ -11,7 +11,7 @@ for dynamic programming solvers like FRTDP.  The workflow for generating the MDP
 - The IPCC projection dataset (for Battery tide gauge in New York) used to simulate SLR models is publicly available at: [IPCC slr projections](https://zenodo.org/records/6382554)
 - The dataset for SLR trends (for Battery tide gauge in New York) used to fit the noise present in the past SLR observations is taken from: [NOAA slr trends](https://tidesandcurrents.noaa.gov/sltrends/sltrends_station.shtml?id=8518750)
 ## Datasets used for storm surge simulations
-The dataset of annual extremes (for Battery tide gauge in New York) used to fit storm surges is taken from: [extremes] (https://tidesandcurrents.noaa.gov/est/est_station.shtml?stnid=8518750)
+The dataset of annual extremes (for Battery tide gauge in New York) used to fit storm surges is taken from: [extremes](https://tidesandcurrents.noaa.gov/est/est_station.shtml?stnid=8518750)
 
 ## Generate transition models
 
