@@ -13,8 +13,8 @@ for dynamic programming solvers like FRTDP.  The workflow for generating the MDP
 ## Sea-level-rise simulations
 The SLR trajectories are simulated using the slr_simulations.m file. These simulations are used to generate the SLR state transitions.
 
-## Datasets used for storm surge simulations
-The dataset of annual extremes (for Battery tide gauge in New York) used to fit storm surges is taken from: [NOAA Extremes](https://tidesandcurrents.noaa.gov/est/est_station.shtml?stnid=8518750)
+## Datasets used for storm surge models
+The dataset of annual extremes (for Battery tide gauge in New York) used to fit a GEV model for storm surges is taken from: [NOAA Extremes](https://tidesandcurrents.noaa.gov/est/est_station.shtml?stnid=8518750)
 
 ## Generate transition models
 To generate discrete-state transition probabilities, the SLR and storm surge levels are suitably discretized into 77 and 72 discrete states, respectively. The discrete-state transitions for Sea Level Rise (SLR) and storm surge are generated using the codes, as:
