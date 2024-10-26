@@ -20,9 +20,10 @@ The dataset of annual extremes (for Battery tide gauge in New York) used to fit 
 To generate discrete-state transition probabilities, the SLR and storm surge levels are suitably discretized into 77 and 72 discrete states, respectively. The discrete-state transitions for Sea Level Rise (SLR) and storm surge are generated using the codes, as:
 1. slr transitions.m for SLR transitions
 2. surge_transitions.m for storm surge transitions
+The transition probability matrices derived and used in this paper can be found at:
 
 The full state space of the problem needs to account for non-stationary sea level rise trends and different system configurations possible with different sets of actions. The complete state space of the problem is derived in the paper. 
 After generating the SLR and surge transitions, the full transition model over the complete MDP state space is generated considering state-space augmentation with time and systems, using transition_model_MDP.m file.
 
 ## Generate reward models
-
+Generate the rewards for states in the different systems for all the actions in the application setting, along with social cost of carbon considerations, using the rewards_with_scc_systems.m file.
