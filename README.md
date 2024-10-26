@@ -18,8 +18,8 @@ The SLR trajectories are simulated using the slr_simulations.m file. These simul
 
 ## Generate transition models
 To generate discrete-state transition probabilities, the SLR and storm surge levels are suitably discretized into 77 and 72 discrete states, respectively. The discrete-state transitions for Sea Level Rise (SLR) and storm surge are generated using the codes, as:
-(i) slr transitions.m for SLR transitions
-(ii) surge_transitions.m for storm surge transitions
+1. slr transitions.m for SLR transitions
+2. surge_transitions.m for storm surge transitions
 
 ## Generate reward models
 
