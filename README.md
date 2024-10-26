@@ -28,3 +28,6 @@ After generating the SLR and surge transitions, the full transition model over t
 ## Generate reward models
 Generate the rewards for states in the different systems for all the actions in the application setting, along with social cost of carbon considerations, using the rewards_with_scc_systems.m file.
 After generating the rewards for the different systems, the rewards for the full MDP state space are generated using rewards_model_MDP.m file. This file calls rewards_fp.m file to shape the rewards in such a way so as to use the fast parser of the input file in the solver used.
+
+## Generate the MDP input file for dynamic programming solvers
+After generating the transitions and rewards components of the MDP model in the above steps, the MDP input file is generated using inp_mdp_file_generator.m file.
