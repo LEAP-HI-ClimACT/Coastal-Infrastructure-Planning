@@ -2,7 +2,7 @@
 This repository includes the codes used in the paper: **Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change**.
 
 **TLDR**: Climate change adaptation is often addressed with static policies that ignore future climate uncertainties. This work develops a climate change adaptation framework using stochastic-control methodologies, offering optimal solutions that address model uncertainty, social costs of carbon, and a wide variety of adaptation actions.
-![Coastal Infrastructure Adaptation under Climate Change]()
+![Coastal Infrastructure Adaptation under Climate Change](https://github.com/ashmita695/Coastal_Infrastructure_Planning/blob/main/coastal%20application%20framework.pdf)
 This repository contains the steps along with the necessary codes for generating components of the MDP and POMDP models for flood management and for generating the input
 for dynamic programming solvers like FRTDP.  The workflow for generating the MDP input for the coastal city setting application with the two floodwall options, as described in the paper, using the provided code is outlined below.
 
