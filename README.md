@@ -8,7 +8,7 @@ for dynamic programming solvers like FRTDP.  The workflow for generating the MDP
 
 # Steps to generate adaptation policies for coastal applications
 ## Datasets used for sea-level-rise simulations
-- The IPCC projection dataset (for Battery tide gauge in New York) used to simulate SLR models is available at: [IPCC slr projections](https://zenodo.org/records/6382554). These datasets are to be cited properly as documented in [IPCC slr projections](https://zenodo.org/records/6382554).
+- The IPCC projection dataset (for Battery tide gauge in New York) used to simulate SLR models is available at: [IPCC slr projections](https://zenodo.org/records/6382554). These datasets, if used directly, are to be cited properly as documented in [IPCC SLR projections](https://zenodo.org/records/6382554).
 - The dataset for SLR trends (for Battery tide gauge in New York) used to fit the noise present in the past SLR observations is taken from: [NOAA slr trends](https://tidesandcurrents.noaa.gov/sltrends/sltrends_station.shtml?id=8518750)
 ## Sea-level-rise simulations
 The SLR trajectories are simulated using the **slr_simulations.m** file. This file requires the SLR projections to be stored in the format as is provided in **SLR_245.mat** file. This file provides sea-level rise (SLR) projections across various years (**years.mat**) and quantile values (**quantiles.mat**) for the SSP245 scenario at the New York Battery tidal gauge (downloaded from the links above). The generated simulations are used to inform SLR state transitions.
