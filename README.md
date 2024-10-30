@@ -29,8 +29,8 @@ The full state space of the problem needs to account for non-stationary sea leve
 After generating the SLR and surge transitions, the full transition model over the complete MDP state space is generated considering state-space augmentation with time and systems, using **transition_model_MDP.m** file.
 
 ## Generate reward models
-Generate the rewards for states in the different systems for all the actions in the application setting, along with social cost of carbon considerations, using the **rewards_with_scc_systems.m** file.
-After generating the rewards for the different systems, the rewards for the full MDP state space are generated using the **rewards_model_MDP.m** file. This file calls **rewards_fp.m** file to shape the rewards in such a way so as to use the fast parser for the input file in the solver used.
+Generate the rewards for states in the different systems for all the actions in the application setting, along with the social cost of carbon considerations, using the **rewards_with_scc_systems.m** file.
+After generating the rewards for the different systems, the rewards for the full MDP state space are generated using the **rewards_model_MDP.m** file. This file calls **rewards_fp.m** file to shape the rewards in such a way so as to use the fast parser for the input file in the solver used. The fast parser is used to efficiently parse large input files for the dynamic programming solver to be used.
 
 ## Generate the MDP input file for dynamic programming solvers
 After generating the transitions and rewards components of the MDP model in the above steps, the MDP input file is generated using **inp_mdp_file_generator.m** file. The generated input is solved using the FRTDP solver. The solver is publicly available at: [FRTDP](https://github.com/trey0/zmdp). The details related to the solver and the input file formats can be found in
