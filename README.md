@@ -23,7 +23,7 @@ To generate discrete-state transition probabilities, the SLR and storm surge lev
 1. **slr_transitions.m** for SLR transitions
 2. **surge_transitions.m** for storm surge transitions
 
-The SLR transition probability matrices derived and used in this paper can be found at **t_slr_245.mat** file. The storm surge transitions derived from the GEV model is uploaded here as **t_surge.mat** file.
+The SLR transition probability matrices derived and used in this paper can be found at **t_slr_245.mat** file. The storm surge transitions derived from the GEV model is uploaded here as **t_surge.mat** file. 
 
 The full state space of the problem needs to account for non-stationary sea level rise trends and different system configurations possible with different sets of actions. The complete state space of the problem is derived in the paper. 
 After generating the SLR and surge transitions, the full transition model over the complete MDP state space is generated considering state-space augmentation with time and systems, using **transition_model_MDP.m** file.
