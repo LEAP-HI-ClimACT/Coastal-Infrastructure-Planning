@@ -6,14 +6,14 @@ This repository includes the codes used in the paper: **Optimal Life-Cycle Adapt
 Coastal infrastructure adaptation against climate change effects is often addressed with static policies that ignore future climate uncertainties. This work develops a climate change adaptation framework using stochastic-control methodologies, offering optimal solutions that address model uncertainty, social costs of carbon, and a wide variety of adaptation actions.
 
 This repository contains the steps along with the necessary codes for generating components of the MDP and POMDP models for flood management and for generating the input
-for dynamic programming solvers like FRTDP.  The workflow for generating the MDP input for the coastal city setting application with the two floodwall options, as described in the paper, using the provided code is outlined below.
+for dynamic programming solvers like FRTDP.  The workflow for generating the MDP input for the coastal city setting application with the two floodwall options for the SSP:245 scenario, as described in the paper, using the provided code, is outlined below.
 
 # Steps to generate adaptation policies for coastal applications
 ## Datasets used for sea-level-rise simulations
 - The IPCC projection dataset (for Battery tide gauge in New York) used to simulate SLR models is available at: [IPCC slr projections](https://zenodo.org/records/6382554). These datasets, if used directly, are to be cited properly as documented in [IPCC SLR projections](https://zenodo.org/records/6382554).
 - The dataset for SLR trends (for Battery tide gauge in New York) used to fit the noise present in the past SLR observations is taken from: [NOAA slr trends](https://tidesandcurrents.noaa.gov/sltrends/sltrends_station.shtml?id=8518750)
 ## Sea-level-rise simulations
-The SLR trajectories are simulated using the **slr_simulations.m** file. This file requires the SLR projections to be stored in the format as is provided in **SLR_245.mat** file. This file provides sea-level rise (SLR) projections across various years (**years.mat**) and quantile values (**quantiles.mat**) for the SSP245 scenario at the New York Battery tidal gauge (downloaded from the links above). The generated simulations are used to inform SLR state transitions.
+The SLR trajectories are simulated using the **slr_simulations.m** file. This file requires the SLR projections to be stored in the format as is provided in **SLR_245.mat** file. This file provides sea-level rise (SLR) projections across various years (**years.mat**) and quantile values (**quantiles.mat**) for the SSP245 scenario at the New York Battery tidal gauge (downloaded from [IPCC slr projections](https://zenodo.org/records/6382554)). The SLR projections for other SSP scenarios can also be found at [IPCC slr projections](https://zenodo.org/records/6382554). The generated simulations are used to inform SLR state transitions.
 
 ## Datasets used for storm surge models
 The dataset of annual extremes (for Battery tide gauge in New York) used to fit a GEV model for storm surges is taken from: [NOAA Extremes](https://tidesandcurrents.noaa.gov/est/est_station.shtml?stnid=8518750)
