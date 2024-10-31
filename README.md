@@ -52,7 +52,7 @@ If you use this repository in your research or projects, please cite our paper a
 
 ```bibtex
 @article{bhattacharya2023optimal,
-    author = {Bhattacharya, S. and Papakonstantinou, K. and Warn, G. and McPhillips, L. and Bilec, M. and Forest, C. and Hasan, S. and Chavda, M.},
+    author = {Bhattacharya, A. and Papakonstantinou, K.G., and Warn, G., McPhillips, L., Bilec, M.M., and Forest, C.E., and Hasan, R. and Chavda, D.},
     title = {Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change},
     journal = {Nature Communications},
     year = {2023},
