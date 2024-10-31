@@ -1,7 +1,7 @@
 # Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change
 This repository includes the codes used in the paper: **Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change**.
 
-**TLDR**:![Coastal Infrastructure Adaptation under Climate Change](https://github.com/ashmita695/Coastal_Infrastructure_Planning/blob/main/coastal%20application%20framework.pdf)
+**TLDR**:![Coastal Infrastructure Adaptation under Climate Change](https://github.com/ashmita695/Coastal_Infrastructure_Planning/blob/main/coastal_application_framework_github.png)
 
 Coastal infrastructure adaptation against climate change effects is often addressed with static policies that ignore future climate uncertainties. This work develops a climate change adaptation framework using stochastic-control methodologies, offering optimal solutions that address model uncertainty, social costs of carbon, and a wide variety of adaptation actions.
 
