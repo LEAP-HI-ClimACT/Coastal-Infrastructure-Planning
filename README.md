@@ -1,5 +1,5 @@
 # Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change
-This repository includes the codes used in the paper: **Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change** (Accepted in Nature Communications. Currently in print).
+This repository includes the codes used in the paper: **Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change** by Bhattacharya, Papakonstantinou, Warn, McPhillips, Bilec, Forest, Hasan, and Chavda (Accepted in Nature Communications. Currently in print).
 
 ![Coastal Infrastructure Adaptation under Climate Change](coastal_application_framework_github.png)
 
