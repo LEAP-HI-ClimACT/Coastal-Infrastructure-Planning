@@ -50,4 +50,11 @@ The POMDP input file is generated using **inp_pomdp_file_generator.m** file. The
 
 If you use this repository in your research or projects, please cite our paper as follows:
 
-
+```bibtex
+@article{bhattacharya2023optimal,
+    author = {Bhattacharya, S. and Papakonstantinou, K. and Warn, G. and McPhillips, L. and Bilec, M. and Forest, C. and Hasan, S. and Chavda, M.},
+    title = {Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change},
+    journal = {Nature Communications},
+    year = {2023},
+    note = {Accepted and currently in print}
+}
