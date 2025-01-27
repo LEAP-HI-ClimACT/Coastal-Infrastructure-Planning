@@ -1,5 +1,5 @@
 # Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change
-This repository includes the codes used in the paper: **Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change** by Bhattacharya, Papakonstantinou, Warn, McPhillips, Bilec, Forest, Hasan, and Chavda (Accepted in Nature Communications. Currently in print).
+This repository includes the codes used in the paper: **Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change** by Bhattacharya, Papakonstantinou, Warn, McPhillips, Bilec, Forest, Hasan, and Chavda, Nature Communications 16, 1076 (2025), https://doi.org/10.1038/s41467-024-55679-9.
 
 ![Coastal Infrastructure Adaptation under Climate Change](coastal_adaptation_framework.png)
 
@@ -51,11 +51,12 @@ The POMDP input file is generated using **inp_pomdp_file_generator.m** file. The
 If you use this repository in your research or projects, please cite our paper as follows:
 
 ```bibtex
-@article{bhattacharya2024optimal,
+@article{bhattacharya2025optimal,
     author = {Bhattacharya, A. and Papakonstantinou, K.G., and Warn, G.P., McPhillips, L.,
     Bilec, M.M., and Forest, C.E., and Hasan, R. and Chavda, D.},
     title = {Optimal Life-Cycle Adaptation of Coastal Infrastructure under Climate Change},
     journal = {Nature Communications},
-    year = {2024},
-    note = {Accepted and currently in print}
+    volume={16},
+    pages={1076},
+    year = {2025},
 }
