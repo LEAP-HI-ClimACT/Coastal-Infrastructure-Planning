@@ -29,7 +29,7 @@ The full state space of the problem needs to account for non-stationary sea leve
 After generating the SLR and surge transitions, the full transition model over the complete MDP state space is generated considering state-space augmentation with time and systems, using **transition_model_MDP.m** file.
 
 ## Generate reward models
-Generate the rewards for states in the different systems for all the actions in the application setting, along with the social cost of carbon considerations, using the **rewards_with_scc_systems.m** file.
+Generate the rewards for states in the different systems for all the actions in this application setting, along with the social cost of carbon considerations, using the **rewards_with_scc_systems.m** file.
 After generating the rewards for the different systems, the rewards for the full MDP state space are generated using the **rewards_model_MDP.m** file. This file calls **rewards_fp.m** file to shape the rewards in such a way so as to use the fast parser for the input file in the solver used. The fast parser is used to efficiently parse large input files for the dynamic programming solver to be used.
 
 ## Generate the MDP input file for dynamic programming solvers
@@ -40,6 +40,9 @@ this [GitHub](https://github.com/trey0/zmdp).
 For the POMDP formulation, the MDP state space is further expanded to include all relevant states within each of the climate scenario models under consideration. The transition matrices need to be obtained as outlined above for each of the climate models under consideration. The underlying climate model is not known with certainty in this framework and is inferred based on observations in time. We consider two possible climate model scenarios in this work, SSP2-4.5 and SSP5-8.5, without loss of generality, and the belief over these models is updated using SLR states, which are fully observable in time. For any given SLR state, there exists a probability of observing that specific SLR state under each of the considered climate models. These probabilities are represented in the observation likelihood matrices and can be generated using **obs_likelihood_models.m** file. 
 
 The POMDP input file is generated using **inp_pomdp_file_generator.m** file. The config options files for the FRTDP solver are also provided here as **config_options_mdp** and **config_options_pomdp** for the MDP and POMDP formulations, respectively. These options can be changed according to user preference. More details about the options can be found at [FRTDP](https://github.com/trey0/zmdp).
+
+### Note to generate MDP input files for other application settings
+In order to generate MDP input files for the other application settings shown in the paper, the rewards model only needs to be updated with the rewards for the states corresponding to the different systems that will have be to considered for all the actions in the considered application setting. 
 
 ## Data Sources for SLR projections
 - Fox-Kemper, B., H.T. Hewitt, C. Xiao, G. Aðalgeirsdóttir, S.S. Drijfhout, T.L. Edwards, N.R. Golledge, M. Hemer, R.E. Kopp, G. Krinner, A. Mix, D. Notz, S. Nowicki, I.S. Nurhati, L. Ruiz, J.-B. Sallée, A.B.A. Slangen, and Y. Yu, 2021: Ocean, Cryosphere and Sea Level Change. In Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Masson-Delmotte, V., P. Zhai, A. Pirani, S.L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M.I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J.B.R. Matthews, T.K. Maycock, T. Waterfield, O. Yelekçi, R. Yu, and B. Zhou (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 1211–1362, doi:10.1017/9781009157896.011.
