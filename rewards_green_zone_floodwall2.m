@@ -1,5 +1,5 @@
 % with carbon emissions costs (accumulated and SCC increasing in time)
-% actions are green infra (inland) and dike2
+% actions are green infra (inland) and floodwall2 (dike2)
 % rewards as penalties due to flooding corresponding to each state (level
 % of water)
 
