@@ -1,4 +1,4 @@
-% actions are green infra (edge of wedge)- salt marshes and dike2
+% actions are green infra (edge of wedge)- salt marshes and floodwall2 (dike2)
 % correct way to calculate the rewards with the scc accumulation from the
 % current time it is emitted
 
