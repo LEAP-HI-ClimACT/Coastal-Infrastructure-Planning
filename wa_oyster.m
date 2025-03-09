@@ -1,9 +1,9 @@
-% wave attenuation model for oyester reefs : nature based solution
+% wave attenuation model for oyster reefs : nature based solution
 % at edge of the wedge
 
 % wave attenuation model: 40% for total water depth of 0.5–1.0 m; 10% for water depth of 1.0–1.5 m; assume 5% for >1.5 m depth
 
-function wa = wa_oyester(total_h)
+function wa = wa_oyster(total_h)
 if total_h <= 0.5
     wa = 0.50;
 elseif total_h > 0.5 && total_h <= 1.00
